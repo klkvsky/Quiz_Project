@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Квартиры в Адлере от Застройщика.</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <section class="main">
+        <div class="main__space"></div>
+        <div class="main__content hero">
+            <h1>Ответьте на несколько вопросов </h1>
+            <p>Это поможем нам сделать максимально релевантное предложение!</p>
+
+            <button id="main__button">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M497.36,69.995c-7.532-7.545-19.753-7.558-27.285-0.032L238.582,300.845l-83.522-90.713
+                        c-7.217-7.834-19.419-8.342-27.266-1.126c-7.841,7.217-8.343,19.425-1.126,27.266l97.126,105.481
+                        c3.557,3.866,8.535,6.111,13.784,6.22c0.141,0.006,0.277,0.006,0.412,0.006c5.101,0,10.008-2.026,13.623-5.628L497.322,97.286
+                        C504.873,89.761,504.886,77.54,497.36,69.995z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M492.703,236.703c-10.658,0-19.296,8.638-19.296,19.297c0,119.883-97.524,217.407-217.407,217.407
+                        c-119.876,0-217.407-97.524-217.407-217.407c0-119.876,97.531-217.407,217.407-217.407c10.658,0,19.297-8.638,19.297-19.296
+                        C275.297,8.638,266.658,0,256,0C114.84,0,0,114.84,0,256c0,141.154,114.84,256,256,256c141.154,0,256-114.846,256-256
+                        C512,245.342,503.362,236.703,492.703,236.703z" />
+                        </g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                    <g>
+                    </g>
+                </svg>
+                Получить Предложение</button>
+        </div>
+    </section>
+
+
+    <video autoplay muted loop id="myVideo">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
+
+
+    <section class="quiz">
+        <form method="POST" action="order.php" class="quiz__cont">
+
+
+            <div class="swiper">
+                <div class="quiz__cont__content swiper-wrapper">
+
+                    <div
+                        class="swiper-slide quiz__cont__content__slide forInvestorLine forRentLine forVacationLine forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Для каких целей Вы планируете приобретение недвижимости в Адлере (Сочи)?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)"
+                                id="forLifeLinePick">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whatFor[]" value="Для Жизни" />
+
+
+                                <img loading="lazy" src="img/forLife.jpg" alt="">
+                                <p>Для Жизни</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)"
+                                id="forVacationLinePick">
+
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whatFor[]" value="Для отдыха" />
+
+                                <img loading="lazy" src="img/forVacation.jpg" alt="">
+                                <p>Для Отдыха</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)"
+                                id="forRentLinePick">
+
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whatFor[]" value="Для Сдачи в Аренду" />
+                                <img loading="lazy" src="img/forRent.jpg" alt="">
+                                <p>Для сдачи в Аренду</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)"
+                                id="forInvestorLinePick">
+
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whatFor[]" value="Для Инвестиции" />
+                                <img loading="lazy" src="img/forInvestor2.jpg" alt="">
+                                <p>Для Инвестиций</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forInvestorLine">
+
+                        <h3>Какие сроки инвестирования для Вас больше подходят?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="legthofIvst[]" value="Краткосрочные до 6 месяцев" />
+                                <div class="img"></div>
+                                <p>Краткосрочные до 6 месяцев</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="legthofIvst[]" value="Среднесрочные до 12 месяцев" />
+                                <div class="img"></div>
+                                <p>Среднесрочные до 12 месяцев</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="legthofIvst[]" value="Долгосрочные до 24 месяцев" />
+                                <div class="img"></div>
+                                <p>Долгосрочные до 24 месяцев</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="legthofIvst[]" value="Более другой срок" />
+                                <div class="img"></div>
+                                <p>Более другой срок</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forRentLine">
+
+                        <h3>Какой интересует вид сдачи в аренду?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofRent[]" value="Посуточно" />
+                                <div class="img"></div>
+                                <p>Посуточно</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofRent[]" value="Постоянная аренда" />
+                                <div class="img"></div>
+                                <p>Постоянная аренда</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofRent[]" value="Комбинированный" />
+                                <div class="img"></div>
+                                <p>Комбинированный</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofRent[]" value="Другое" />
+                                <div class="img"></div>
+                                <p>Другое</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forRentLine">
+
+                        <h3>Какую сумму планируете получать в год от аренды?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="amountofRent[]" value="200 000 ₽" />
+                                <div class="img"></div>
+                                <p>200 000 ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="amountofRent[]" value="300 000 ₽" />
+                                <div class="img"></div>
+                                <p> 300 000 ₽ </p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="amountofRent[]" value="400 000 ₽" />
+                                <div class="img"></div>
+                                <p>400 000 ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="amountofRent[]" value="500 000 ₽" />
+                                <div class="img"></div>
+                                <p>500 000 ₽</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="amountofRent[]" value="Более 600 000 ₽" />
+                                <div class="img"></div>
+                                <p>Более 600 000 ₽</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forRentLine">
+
+                        <h3>Какой ожидаете процент годовых от инвестиций?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="percentofRent[]" value="15%" />
+                                <div class="img"></div>
+                                <p>15%</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="percentofRent[]" value="20%" />
+                                <div class="img"></div>
+                                <p>20%</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="percentofRent[]" value="25%" />
+                                <div class="img"></div>
+                                <p>25%</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="percentofRent[]" value="30%" />
+                                <div class="img"></div>
+                                <p>30%</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="percentofRent[]" value="Более 40%" />
+                                <div class="img"></div>
+                                <p>Более 40%</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-slide quiz__cont__content__slide forVacationLine NotToDeleteForLifeLine">
+
+                        <h3>Где бы вы хотели отдыхать?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="Ближе к морю" />
+                                <div class="img"></div>
+                                <p>Ближе к морю</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="Ближе к горам" />
+                                <div class="img"></div>
+                                <p>Ближе к горам</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="В Красной Поляне" />
+                                <div class="img"></div>
+                                <p>В Красной Поляне</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="В Сочи" />
+                                <div class="img"></div>
+                                <p>В Сочи</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="В районе Имертинки" />
+                                <div class="img"></div>
+                                <p>В районе Имертинки</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="placeofVacation[]" value="В Адлере" />
+                                <div class="img"></div>
+                                <p>В Адлере</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="swiper-slide quiz__cont__content__slide forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Вид помещения?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card forSmallLifeLinePick1"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Квартира" />
+                                <img loading="lazy" src="img/room.jpg" alt="">
+                                <p>Квартира</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card forSmallLifeLinePick1"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Апартаменты" />
+                                <img loading="lazy" src="img/apartaments.jpg" alt="">
+                                <p>Апартаменты</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card forBigLifeLinePick2"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Частный Дом" />
+                                <img loading="lazy" src="img/house.jpg" alt="">
+                                <p>Частный Дом</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card forBigLifeLinePick2"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Таунхаус" />
+                                <img loading="lazy" src="img/townhouse.jpg" alt="">
+                                <p>Таунхаус</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card forBigLifeLinePick2"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Гостиница" />
+                                <img loading="lazy" src="img/hotel.jpg" alt="">
+                                <p>Гостиница</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card forBigLifeLinePick2"
+                                onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPlace[]" value="Коммерческое помещение" />
+                                <img loading="lazy" src="img/commercial.jpg" alt="">
+                                <p>Коммерческое помещение</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forVacationLine  forLifeLineNotPrivate">
+
+                        <h3>Желаемая площадь помещения?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <divs class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="areofPlace[]" value="50-100 м²" />
+                                <div class="img"></div>
+                                <p>50-100 м²</p>
+                            </divs>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="areofPlace[]" value="100-200 м²" />
+                                <div class="img"></div>
+                                <p>100-200 м²</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="areofPlace[]" value="Больше 200 м²" />
+                                <div class="img"></div>
+                                <p>Больше 200 м²</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forVacationLine  forLifeLinePrivate">
+
+                        <h3>Какое количество комнат хотите?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="numberofRoom[]" value="Студия" />
+                                <div class="img"></div>
+                                <p>Студия</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="numberofRoom[]" value="Одна" />
+                                <div class="img"></div>
+                                <p>Одна</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="numberofRoom[]" value="Две" />
+                                <div class="img"></div>
+                                <p>Две</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="numberofRoom[]" value="Три" />
+                                <div class="img"></div>
+                                <p>Три</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="numberofRoom[]" value="Больше трех" />
+                                <div class="img"></div>
+                                <p>Больше трех</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide quiz__cont__content__slide forVacationLine  forLifeLineNotPrivate forLifeLinePrivate ">
+
+                        <h3>На каком этапе готовности хотите приобретать недвижимость?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="constrofArea[]" value="Готовое без ремонта" />
+                                <img loading="lazy" src="img/readyWithout.jpg" alt="">
+                                <p>Готовое без ремонта</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="constrofArea[]" value="Готовое с ремонтом" />
+                                <img loading="lazy" src="img/readyWith.jpg" alt="">
+                                <p>Готовое с ремонтом</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="constrofArea[]" value="Начало строительства" />
+                                <img loading="lazy" src="img/constructuion.jpg" alt="">
+                                <p>Начало строительства</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="constrofArea[]" value="Строительство ближе к сдаче" />
+                                <img loading="lazy" src="img/constructionNear.jpg" alt="">
+                                <p>Строительство ближе к сдаче</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="constrofArea[]" value="Не важно" />
+                                <img loading="lazy" src="img/anything.jpg" alt="">
+                                <p>Не важно</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide quiz__cont__content__slide forInvestorLine forRentLine forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Форма оплаты?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPayment[]" value="Наличные" />
+                                <img loading="lazy" src="img/money.jpg" alt="">
+                                <p>Наличные</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPayment[]" value="Ипотека" />
+                                <img loading="lazy" src="img/mortage2.jpg" alt="">
+                                <p>Ипотека</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPayment[]" value="Безналичный расчет" />
+                                <img loading="lazy" src="img/wireless1.jpg" alt="">
+                                <p>Безналичный расчет</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPayment[]" value="Покупка после продажи своей недвижимости" />
+                                <img loading="lazy" src="img/aftersale.jpg" alt="">
+                                <p>Покупка после продажи своей недвижимости</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="typeofPayment[]" value="Рассрочка" />
+                                <img loading="lazy" src="img/rassrochka.jpg" alt="">
+                                <p>Рассрочка</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide quiz__cont__content__slide forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Какой для вас комфортный бюджет?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="до 4 млн ₽" />
+                                <div class="img"></div>
+                                <p>до 4 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="4-6 млн ₽" />
+                                <div class="img"></div>
+                                <p>4-6 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="6-8 млн ₽" />
+                                <div class="img"></div>
+                                <p>6-8 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="8-10 млн ₽" />
+                                <div class="img"></div>
+                                <p>8-10 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="0-15 млн ₽" />
+                                <div class="img"></div>
+                                <p>10-15 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="5-20 млн ₽" />
+                                <div class="img"></div>
+                                <p>15-20 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="20-30 млн ₽" />
+                                <div class="img"></div>
+                                <p>20-30 млн ₽</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="budget[]" value="Больше 30 млн ₽" />
+                                <div class="img"></div>
+                                <p>Больше 30 млн ₽</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide quiz__cont__content__slide forInvestorLine forRentLine forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Когда планируете приехать в Сочи?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="Я уже в Сочи" />
+                                <div class="img"></div>
+                                <p>Я уже в Сочи</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="В ближайшие дни" />
+                                <div class="img"></div>
+                                <p>В ближайшие дни</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="В течении месяца" />
+                                <div class="img"></div>
+                                <p>В течении месяца</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="Через полгода" />
+                                <div class="img"></div>
+                                <p>Через полгода</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="Пока не запланировал(а)" />
+                                <div class="img"></div>
+                                <p>Пока не запланировал(а)</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this), endtitles()">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="whenSochi[]" value="Хочу безопасную удаленную сделку" />
+                                <div class="img"></div>
+                                <p>Хочу безопасную удаленную сделку</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide quiz__cont__content__slide forInvestorLine forRentLine forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Когда планируете приехать в Сочи?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Я уже в Сочи</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>В ближайшие дни</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>В течении месяца</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Через полгода</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Пока не запланировал(а)</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Хочу безопасную удаленную сделку</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide quiz__cont__content__slide forInvestorLine forRentLine forVacationLine  forLifeLineNotPrivate forLifeLinePrivate">
+
+                        <h3>Когда планируете приехать в Сочи?</h3>
+
+                        <div class="quiz__cont__content__slide__grid">
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Я уже в Сочи</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>В ближайшие дни</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>В течении месяца</p>
+                            </div>
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Через полгода</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Пока не запланировал(а)</p>
+                            </div>
+
+                            <div class="quiz__cont__content__slide__grid__card" onclick="cardClick(this)">
+                                <input type="checkbox" class="quiz__cont__content__slide__grid__card__check"
+                                    name="goal[]" value="Инвестиции" />
+                                <div class="img"></div>
+                                <p>Хочу безопасную удаленную сделку</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="quiz__cont__controls">
+
+                <div>
+                    <div class="quiz__cont__controls__sale">
+                        <h4>Ваша Скидка:</h4>
+                        <p id="counter">300 000</p>
+
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 192.701 192.701"
+                            style="enable-background:new 0 0 192.701 192.701;" xml:space="preserve">
+                            <g>
+                                <g id="Double_Chevron_Down">
+                                    <path d="M171.955,88.526l-75.61,74.528l-75.61-74.54c-4.74-4.704-12.439-4.704-17.179,0c-4.74,4.704-4.74,12.319,0,17.011
+                l84.2,82.997c4.559,4.511,12.608,4.535,17.191,0l84.2-83.009c4.74-4.692,4.74-12.319,0-17.011
+                C184.394,83.823,176.695,83.823,171.955,88.526z" />
+                                    <path d="M87.755,104.322c4.559,4.511,12.608,4.535,17.191,0l84.2-82.997c4.74-4.704,4.74-12.319,0-17.011
+                c-4.74-4.704-12.439-4.704-17.179,0L96.345,78.842L20.734,4.314c-4.74-4.704-12.439-4.704-17.179,0
+                c-4.74,4.704-4.74,12.319,0,17.011L87.755,104.322z" />
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+
+                    </div>
+
+                    <div class="quiz__cont__controls__d">
+
+                        <div class="quiz__cont__controls__d__director">
+
+                            <div class="quiz__cont__controls__d__director__photo">
+                                <img loading="lazy" src="img/adrina.jpg"
+                                    class="quiz__cont__controls__d__director__photo__img"
+                                    alt="Фотография Генерального Директора - Адрины">
+                                </img>
+                            </div>
+
+                            <div class="quiz__cont__controls__d__director__text">
+                                <h4>Адрина</h4>
+                                <p>Генеральный директор</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="quiz__cont__controls__d__speach">
+                            <p>Пожалуйста, ответьте на вопросы в соответствии с Вашими пожеланиями</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="quiz__cont__controls__cont">
+                    <button id="quiz__cont__controls__button--next" class="quiz__cont__controls__button--next"
+                        type="button">Дальше</button>
+                    <button style="display: none;" class="quiz__cont__controls__button--prev" type="button">Назад</button>
+                    <button class="quiz__cont__controls__button--reset" type="button">Заного</button>
+                </div>
+            </div>
+
+            <div class="quiz__cont__content__slide--end">
+
+                <div class="quiz__cont__content__slide--end__left">
+                    <h2>Отлично, остался последний шаг</h2>
+                    <p>Оставьте свои контактные данные, и обработав Ваши ответы - мы сделаем максимально выгодное
+                        предложение</p>
+                </div>
+
+                <div class="quiz__cont__content__slide--end__right">
+                    <label for="name">Введите ваше Имя</label>
+
+                    <div class="input-cont">
+                        <svg viewBox="0 0 24 24" class="mdi-icon mdi-36px">
+                            <path
+                                d="M12,4C14.21,4 16,5.79 16,8C16,10.21 14.21,12 12,12C9.79,12 8,10.21 8,8C8,5.79 9.79,4 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
+                                stroke-width="0" fill-rule="nonzero"></path>
+                        </svg>
+
+                        <input type="text" required id="name" name="name" placeholder="Имя" />
+                    </div>
+
+
+
+                    <label for="phone">Введите ваш номер</label>
+                    <div class="input-cont">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            aria-hidden="true" focusable="false"
+                            style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                            <g>
+                                <path fill-rule="evenodd"
+                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42a18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </g>
+                        </svg>
+
+                        <input required id="phone" pattern=".{15,}" type="text" id="phone" name="phone" value="+7" />
+                    </div>
+
+
+                    <button class="submit" id="submit" type="submit">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M497.36,69.995c-7.532-7.545-19.753-7.558-27.285-0.032L238.582,300.845l-83.522-90.713
+                        c-7.217-7.834-19.419-8.342-27.266-1.126c-7.841,7.217-8.343,19.425-1.126,27.266l97.126,105.481
+                        c3.557,3.866,8.535,6.111,13.784,6.22c0.141,0.006,0.277,0.006,0.412,0.006c5.101,0,10.008-2.026,13.623-5.628L497.322,97.286
+                        C504.873,89.761,504.886,77.54,497.36,69.995z" />
+                                </g>
+                            </g>
+                            <g>
+                                <g>
+                                    <path d="M492.703,236.703c-10.658,0-19.296,8.638-19.296,19.297c0,119.883-97.524,217.407-217.407,217.407
+                        c-119.876,0-217.407-97.524-217.407-217.407c0-119.876,97.531-217.407,217.407-217.407c10.658,0,19.297-8.638,19.297-19.296
+                        C275.297,8.638,266.658,0,256,0C114.84,0,0,114.84,0,256c0,141.154,114.84,256,256,256c141.154,0,256-114.846,256-256
+                        C512,245.342,503.362,236.703,492.703,236.703z" />
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+                        Получить подборку
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+
+    <script src="code/main.js" defer></script>
+</body>
+
+</html>
